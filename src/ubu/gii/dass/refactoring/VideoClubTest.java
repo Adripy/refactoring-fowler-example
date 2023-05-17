@@ -21,7 +21,6 @@ public class VideoClubTest {
 	protected Movie m0, m11, m12, m2;
 	protected Customer c1;
 	private static final String ANY_TITLE = "Any Movie Title";
-	private static final int UNKNOWN_PRICE_CODE = 99;
 	
 	@Before
 	public void setUp() {
