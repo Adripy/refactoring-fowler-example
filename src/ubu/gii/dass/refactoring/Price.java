@@ -3,10 +3,6 @@ package ubu.gii.dass.refactoring;
 abstract class Price {
 	abstract int getPriceCode();
 
-	double getCharge(Movie movie, int daysRented) {
-		return getCharge(daysRented);
-	}
-
 	double getCharge(int daysRented) {
 		double thisAmount = 0;
 		switch (getPriceCode()) {
