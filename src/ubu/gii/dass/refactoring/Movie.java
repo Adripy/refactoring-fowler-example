@@ -21,15 +21,15 @@ public class Movie {
 
 	public Movie(String title, int priceCode) {
 		_title = title;
-		set_priceCode(priceCode);
+		setPriceCode(priceCode);
 	}
 
 	public int getPriceCode() {
-		return get_priceCode();
+		return _priceCode;
 	}
 
 	public void setPriceCode(int arg) {
-		set_priceCode(arg);
+		_priceCode = arg;
 	}
 
 	public String getTitle() {
@@ -66,13 +66,5 @@ public class Movie {
 		{
 			return 1;
 		}
-	}
-
-	private int get_priceCode() {
-		return _priceCode;
-	}
-
-	private void set_priceCode(int _priceCode) {
-		this._priceCode = _priceCode;
 	}
 }
