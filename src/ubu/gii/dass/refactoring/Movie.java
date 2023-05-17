@@ -36,11 +36,9 @@ public class Movie {
 		return _title;
 	}
 
-	double getCharge(Rental rental) {
+	double getCharge(int daysRented) {
 		double thisAmount = 0;
-		// determine amounts for each line
-		int daysRented = rental.getDaysRented();
-		switch (rental.getMovie().getPriceCode()) {
+		switch (getPriceCode()) {
 		case Movie.REGULAR:
 			thisAmount += 2;
 			if (daysRented > 2)
